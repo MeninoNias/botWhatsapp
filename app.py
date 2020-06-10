@@ -6,7 +6,7 @@ class WhatsappBot:
     def __init__(self, message, cont):
         self.mensagem = message
         self.cont = cont
-        self.grupos_ou_pessoas = ["Leo IP",]
+        self.grupos_ou_pessoas = ["Name Contato",]
         options = webdriver.ChromeOptions()
         options.add_argument('lang=pt-br')
         self.driver = webdriver.Chrome(executable_path=r'./chromedriver', chrome_options=options)
@@ -27,5 +27,5 @@ class WhatsappBot:
                 botao_enviar.click()
                 time.sleep(0.5)
 
-bot = WhatsappBot('Leo é viado', 100)
+bot = WhatsappBot('Menssagem', 100)#quantidade de vezes
 bot.EnviarMensagens()
